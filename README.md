@@ -1,1 +1,1 @@
-# -BetaFIT-APP
+# BetaFIT-APP
