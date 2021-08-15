@@ -7,7 +7,7 @@ class RegisterPage extends StatelessWidget{
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/background/background2.png"),
+            image: AssetImage("assets/background/background3.png"),
             fit: BoxFit.cover,
           ),
         ),
@@ -112,7 +112,7 @@ class RegisterPage extends StatelessWidget{
               ),
 
               child: SizedBox.expand(
-                child: FlatButton(
+                child: TextButton(
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
 
@@ -140,7 +140,7 @@ class RegisterPage extends StatelessWidget{
               height: 40,
               alignment: Alignment.center,
 
-              child: FlatButton(
+              child: TextButton(
                 child: Text(
                   "Já tenho uma conta",
                   textAlign: TextAlign.right,

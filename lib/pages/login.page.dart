@@ -1,6 +1,11 @@
+//import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
 class LoginInPage extends StatelessWidget{
+  //late FirebaseFirestore db;
+  String email = '';
+  String password = '';
+
   @override
   Widget build(BuildContext context){
     return Scaffold(
@@ -44,6 +49,9 @@ class LoginInPage extends StatelessWidget{
                 fontSize: 20,
                 color: Color(0xff86C423),
               ),
+              onChanged: (text){
+                email = text;
+              },
             ),
 
             SizedBox(
@@ -66,13 +74,16 @@ class LoginInPage extends StatelessWidget{
                 fontSize: 20,
                 color: Color(0xff86C423),
               ),
+              onChanged: (text){
+                password = text;
+              },
             ),
 
             Container(
               height: 40,
               alignment: Alignment.centerRight,
 
-              child: FlatButton(
+              child: TextButton(
                 child: Text(
                   "Recuperar senha",
                   textAlign: TextAlign.right,
@@ -81,7 +92,7 @@ class LoginInPage extends StatelessWidget{
                   ),
                 ),
                 onPressed: () {
-                  Navigator.of(context).pushNamed('/');
+                  Navigator.of(context).pushNamed('/home');
                 }
               ),
             ),
@@ -109,7 +120,7 @@ class LoginInPage extends StatelessWidget{
               ),
 
               child: SizedBox.expand(
-                child: FlatButton(
+                child: TextButton(
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
 
@@ -124,7 +135,17 @@ class LoginInPage extends StatelessWidget{
                       )
                     ],
                   ),
-                  onPressed: () => {},
+                  onPressed: () {
+                    // if(email == 'admin@admin.com' && password == 'admin'){
+                    //   Navigator.of(context).pushReplacementNamed('/register');
+                    // }else{
+                    //   SimpleDialogOption(
+                    //     onPressed: () { Navigator.of(context).pushReplacementNamed('/'); },
+                    //     child: const Text('Login incorreto'),
+                    //   );
+                    // }
+                    print('aaa');
+                  }
                 ),
               ),
             ),
@@ -137,7 +158,7 @@ class LoginInPage extends StatelessWidget{
               height: 40,
               alignment: Alignment.center,
 
-              child: FlatButton(
+              child: TextButton(
                 child: Text(
                   "Ainda não tenho uma conta",
                   textAlign: TextAlign.right,
@@ -146,7 +167,7 @@ class LoginInPage extends StatelessWidget{
                   ),
                 ),
                 onPressed: () {
-                  Navigator.of(context).pushReplacementNamed('/register');
+                  Navigator.of(context).pushNamed('/register');
                 }
               ),
 

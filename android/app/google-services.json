@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "61722001898",
+    "project_id": "betafitapp-ceb10",
+    "storage_bucket": "betafitapp-ceb10.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:61722001898:android:4a68f2365363e3c5443293",
+        "android_client_info": {
+          "package_name": "com.example.beta_fit_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "61722001898-lt50k1vqk61h2vfloes743v4v2hbhg9l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCM5u9MP4h0HSBFBt6GuoFnVXu02HQJwhg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "61722001898-lt50k1vqk61h2vfloes743v4v2hbhg9l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
