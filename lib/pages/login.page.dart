@@ -1,7 +1,12 @@
-//import 'package:cloud_firestore/cloud_firestore.dart';
+// import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
-class LoginInPage extends StatelessWidget{
+class Login extends StatefulWidget {
+  @override
+  _LoginInPage createState() => _LoginInPage();
+}
+
+class _LoginInPage extends State<Login>{
   //late FirebaseFirestore db;
   String email = '';
   String password = '';
@@ -12,11 +17,12 @@ class LoginInPage extends StatelessWidget{
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/background/background2.png"),
+            image: AssetImage("assets/background/background4.gif"),
             fit: BoxFit.cover,
+            colorFilter: new ColorFilter.mode(Colors.black.withOpacity(0.8), BlendMode.darken), 
           ),
         ),
-
+        
         child: ListView(
           padding: EdgeInsets.only(
             top: 100,
@@ -136,15 +142,7 @@ class LoginInPage extends StatelessWidget{
                     ],
                   ),
                   onPressed: () {
-                    // if(email == 'admin@admin.com' && password == 'admin'){
-                    //   Navigator.of(context).pushReplacementNamed('/register');
-                    // }else{
-                    //   SimpleDialogOption(
-                    //     onPressed: () { Navigator.of(context).pushReplacementNamed('/'); },
-                    //     child: const Text('Login incorreto'),
-                    //   );
-                    // }
-                    print('aaa');
+                    Navigator.of(context).pushReplacementNamed('/home');
                   }
                 ),
               ),

@@ -10,7 +10,7 @@ class _PhotoPage extends State<Photo>{
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Text('Page PhotoPage'),
+      child: Text('Page PhotoPage certeza'),
     );
   }
 }

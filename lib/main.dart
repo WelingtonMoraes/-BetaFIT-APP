@@ -1,3 +1,5 @@
+// @dart=2.9
+
 //main pack
 import 'package:flutter/material.dart';
 
@@ -24,7 +26,7 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/',
       routes: {
-        '/': (context) => LoginInPage(),
+        '/': (context) => Login(),
         '/register': (context) => RegisterPage(),
         '/home': (context) => Home(),
       },

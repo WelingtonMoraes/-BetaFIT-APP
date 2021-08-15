@@ -12,7 +12,6 @@ class Home extends StatefulWidget {
 
 class _HomePage extends State<Home>{
 
-  //GlobalKey _bottomNavigationKey = GlobalKey();
   int _pageIndex = 0;
 
   final Feed _feedPage = Feed();
@@ -87,7 +86,13 @@ class _HomePage extends State<Home>{
 
         onTap: (int index){
           setState(() {
-            _showPage = _pageChooser(index);
+            debugPrint("$index");
+            if(index == 3){
+              debugPrint("$index");
+              Navigator.of(context).pushReplacementNamed('/');
+            }else{
+              _showPage = _pageChooser(index);
+            }
           });
         },
       ),

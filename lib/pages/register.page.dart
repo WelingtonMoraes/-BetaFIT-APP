@@ -7,7 +7,8 @@ class RegisterPage extends StatelessWidget{
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/background/background3.png"),
+            image: AssetImage("assets/background/background6.gif"),
+            colorFilter: new ColorFilter.mode(Colors.black.withOpacity(0.7), BlendMode.darken),
             fit: BoxFit.cover,
           ),
         ),

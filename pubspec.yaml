@@ -25,14 +25,17 @@ dependencies:
     sdk: flutter
   page_transition: "^2.0.2"
   curved_navigation_bar: ^1.0.1 #latest version
+  visibility_detector: ^0.1.5
+  flutter_swiper: ^1.1.6
 
-  # cloud_firestore: ^2.4.0
+  cloud_firestore: ^2.4.0
   # firebase_core: ^0.4.0+9
   # firebase_auth: ^0.14.0+5
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  animated_text_kit: ^4.2.1
 
 dev_dependencies:
   flutter_test:
@@ -82,6 +85,10 @@ flutter:
 
   assets:
     - assets/logo/logo.png
+    - assets/logo/logoBetaBit.png
     - assets/background/background.png
     - assets/background/background2.png
     - assets/background/background3.png
+    - assets/background/background4.gif
+    - assets/background/background5.gif
+    - assets/background/background6.gif
